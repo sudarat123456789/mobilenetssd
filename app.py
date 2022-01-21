@@ -157,6 +157,7 @@ def event_handle(event,json_line):
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "คืนนี้นอนไหน":
             replyObj = TextSendMessage(text="นอนบ้านพี่")
+            
             line_bot_api.reply_message(rtoken,replyObj)
         elif msg == "covid" :
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-all"
